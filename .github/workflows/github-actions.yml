@@ -1,10 +1,18 @@
-name: GitHub Actions
-on: [push]
+name: Java CI
+
+on:
+  - push
+  - pull_request
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Build with Gradle
-          uses: gradle/gradle-build-action@v2
-          with:
-            arguments: build
+      - uses: actions/checkout@v2
+      - name: Set up openJDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - run: make test
