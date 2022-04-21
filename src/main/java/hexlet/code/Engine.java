@@ -4,6 +4,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Engine {
+    public static int getGcdByEuclidsAlgorithm (int n1, int n2) {
+        if (n2 == 0) {
+            return n1;
+        }
+        return getGcdByEuclidsAlgorithm(n2, n1 % n2);
+    }
     public static String getName() {
         Scanner scanName = new Scanner(System.in);
         String userName = scanName.nextLine();

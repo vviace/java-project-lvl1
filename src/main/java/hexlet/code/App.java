@@ -1,6 +1,7 @@
 package hexlet.code;
 
 import hexlet.code.games.FirstGame;
+import hexlet.code.games.FourthGame;
 import hexlet.code.games.SecondGame;
 import hexlet.code.games.ThirdGame;
 
@@ -11,6 +12,7 @@ public class App {
                 + "\n 1 - Greet"
                 + "\n 2 - Even"
                 + "\n 3 - Calc"
+                + "\n 4 - GCD"
                 + "\n 0 - Exit");
         int outNumber = Engine.getNumber();
         System.out.println("Your choice: " + outNumber);
@@ -25,6 +27,9 @@ public class App {
 
         if (outNumber == 3) {
             ThirdGame.thirdGame(numberOfGames);
+        }
+        if (outNumber == 4) {
+            FourthGame.fourthGame(numberOfGames);
         }
     }
 }
