@@ -1,23 +1,28 @@
 package hexlet.code;
 
-import java.util.Scanner;
+import hexlet.code.games.*;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Please enter the game number and press Enter." +
-                "\n 1 - Greet" +
-                "\n 2 - Even" +
-                "\n 0 - Exit");
-        Scanner scanGame = new Scanner(System.in);
-        int gameChoice = scanGame.nextInt();
-        System.out.println("Your choice: " + gameChoice);
+        int numberOfGames = 3;
+        System.out.println("Please enter the game number and press Enter."
+                + "\n 1 - Greet"
+                + "\n 2 - Even"
+                + "\n 3 - Calc"
+                + "\n 0 - Exit");
+        int outNumber = Engine.getNumber();
+        System.out.println("Your choice: " + outNumber);
 
-        if (gameChoice == 1) {
-            Cli.startDialog();
+        if (outNumber == 1) {
+            FirstGame.firstGame();
         }
 
-        if (gameChoice == 2) {
-            Cli.even();
+        if (outNumber == 2) {
+            SecondGame.secondGame(numberOfGames);
+        }
+
+        if (outNumber == 3) {
+            ThirdGame.thirdGame(numberOfGames);
         }
     }
 }
