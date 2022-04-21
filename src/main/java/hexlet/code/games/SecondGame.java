@@ -3,8 +3,8 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 
 public class SecondGame {
-    public static void secondGame (int numberOfGames) {
-        String userName = FirstGame.firstGame();
+    public static void even (int numberOfGames) {
+        String userName = FirstGame.greeting();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
         int answerCount = 0;

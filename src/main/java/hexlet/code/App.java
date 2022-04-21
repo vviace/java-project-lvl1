@@ -1,9 +1,6 @@
 package hexlet.code;
 
-import hexlet.code.games.FirstGame;
-import hexlet.code.games.FourthGame;
-import hexlet.code.games.SecondGame;
-import hexlet.code.games.ThirdGame;
+import hexlet.code.games.*;
 
 public class App {
     public static void main(String[] args) {
@@ -13,23 +10,27 @@ public class App {
                 + "\n 2 - Even"
                 + "\n 3 - Calc"
                 + "\n 4 - GCD"
+                + "\n 5 - Progression"
                 + "\n 0 - Exit");
         int outNumber = Engine.getNumber();
         System.out.println("Your choice: " + outNumber);
 
         if (outNumber == 1) {
-            FirstGame.firstGame();
+            FirstGame.greeting();
         }
 
         if (outNumber == 2) {
-            SecondGame.secondGame(numberOfGames);
+            SecondGame.even(numberOfGames);
         }
 
         if (outNumber == 3) {
-            ThirdGame.thirdGame(numberOfGames);
+            ThirdGame.calc(numberOfGames);
         }
         if (outNumber == 4) {
-            FourthGame.fourthGame(numberOfGames);
+            FourthGame.gcd(numberOfGames);
+        }
+        if (outNumber == 5) {
+            FifthGame.progression(numberOfGames);
         }
     }
 }

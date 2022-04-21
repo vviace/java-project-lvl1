@@ -3,8 +3,8 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 
 public class ThirdGame {
-    public static void thirdGame(int numberOfGames) {
-        String userName = FirstGame.firstGame();
+    public static void calc(int numberOfGames) {
+        String userName = FirstGame.greeting();
         System.out.println("What is the result of the expression?");
         int answerCount = 0;
         while (answerCount <= numberOfGames-1) {
