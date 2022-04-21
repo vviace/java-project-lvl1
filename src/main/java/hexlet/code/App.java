@@ -1,6 +1,8 @@
 package hexlet.code;
 
-import hexlet.code.games.*;
+import hexlet.code.games.FirstGame;
+import hexlet.code.games.SecondGame;
+import hexlet.code.games.ThirdGame;
 
 public class App {
     public static void main(String[] args) {
