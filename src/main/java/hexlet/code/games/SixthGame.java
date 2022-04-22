@@ -5,7 +5,7 @@ import hexlet.code.Engine;
 public class SixthGame {
     public static void prime(int numberOfGames) {
         String userName = FirstGame.greeting();
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
+        System.out.println("Answer 'yes' if the number is prime, otherwise answer 'no'.");
 
         int answerCount = 0;
         while (answerCount <= numberOfGames-1) {
@@ -14,13 +14,16 @@ public class SixthGame {
             System.out.println("Question: " + randomNumber);
             System.out.println("Your answer: ");
             var userMessage = Engine.getMessage();
-            String correctAnswer;
-            if (randomNumber > 1 && randomNumber % 1 == 0  ) {
+            String correctAnswer = "";
+            var correct = Engine.checkPrime(randomNumber);
+
+            if (correct == true ) {
                 correctAnswer = "yes";
 
             } else {
                 correctAnswer = "no";
             }
+
             if (userMessage.equals(correctAnswer)) {
                 System.out.println("Correct!");
                 answerCount++;

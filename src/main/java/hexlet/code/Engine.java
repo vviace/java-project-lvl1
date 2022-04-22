@@ -36,6 +36,19 @@ public class Engine {
         Random random = new Random();
         int indexArray = random.nextInt(operatorArray.length);
         return operatorArray[indexArray];
-
+    }
+    public static boolean checkPrime (int randomNumber) {
+        boolean answer = true;
+        for (int i = 2; i < Math.sqrt(randomNumber); i++) {
+                var number = randomNumber % i;
+                if (number == 0) {
+                    answer = false;
+                    break;
+                }
+            }
+        if (randomNumber == 0 || randomNumber == 1) {
+            answer = false;
+        }
+        return answer;
     }
 }
