@@ -8,3 +8,5 @@
  [![asciicast](https://asciinema.org/a/FtCEvdRGabkY043vSfDw8XFwT.svg)](https://asciinema.org/a/FtCEvdRGabkY043vSfDw8XFwT)
 3. Пример запуска игры №4.
    [![asciicast](https://asciinema.org/a/C0hFVpWrTamd3PnTSPhNy334c.svg)](https://asciinema.org/a/C0hFVpWrTamd3PnTSPhNy334c)
+4. Пример запуска игры №5.
+   [![asciicast](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM.svg)](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM)

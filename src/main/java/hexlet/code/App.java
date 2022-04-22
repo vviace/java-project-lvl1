@@ -11,6 +11,7 @@ public class App {
                 + "\n 3 - Calc"
                 + "\n 4 - GCD"
                 + "\n 5 - Progression"
+                + "\n 6 - Prime"
                 + "\n 0 - Exit");
         int outNumber = Engine.getNumber();
         System.out.println("Your choice: " + outNumber);
@@ -26,11 +27,17 @@ public class App {
         if (outNumber == 3) {
             ThirdGame.calc(numberOfGames);
         }
+
         if (outNumber == 4) {
             FourthGame.gcd(numberOfGames);
         }
+
         if (outNumber == 5) {
             FifthGame.progression(numberOfGames);
+        }
+
+        if (outNumber == 6) {
+            SixthGame.prime(numberOfGames);
         }
     }
 }

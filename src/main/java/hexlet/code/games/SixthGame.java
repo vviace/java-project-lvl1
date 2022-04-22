@@ -2,8 +2,8 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 
-public class SecondGame {
-    public static void even (int numberOfGames) {
+public class SixthGame {
+    public static void prime(int numberOfGames) {
         String userName = FirstGame.greeting();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
@@ -15,7 +15,7 @@ public class SecondGame {
             System.out.println("Your answer: ");
             var userMessage = Engine.getMessage();
             String correctAnswer;
-            if (randomNumber % 2 == 0 ) {
+            if (randomNumber > 1 && randomNumber % 1 == 0  ) {
                 correctAnswer = "yes";
 
             } else {

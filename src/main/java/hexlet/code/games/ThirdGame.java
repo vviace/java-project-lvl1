@@ -8,9 +8,10 @@ public class ThirdGame {
         System.out.println("What is the result of the expression?");
         int answerCount = 0;
         while (answerCount <= numberOfGames-1) {
-            int randomNumber1 = Engine.randomNumber(100);
-            int randomNumber2 = Engine.randomNumber(100);
-            char operator = Engine.randomOperator();
+            int randomNumber1 = Engine.getRandomNumber(100);
+            int randomNumber2 = Engine.getRandomNumber(100);
+            char operator = Engine.getRandomOperator();
+
             System.out.println("Question: " + randomNumber1 + " " + operator + " " + randomNumber2);
             System.out.println("Your answer: ");
             var userNumber = Engine.getNumber();

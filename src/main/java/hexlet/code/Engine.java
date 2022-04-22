@@ -25,13 +25,13 @@ public class Engine {
         int userNumber = scanNumber.nextInt();
         return userNumber;
     }
-    public static int randomNumber(int maximumNumber) {
+    public static int getRandomNumber(int bound) {
         Random random = new Random();
-        int randomNumber = random.nextInt(maximumNumber);
+        int randomNumber = random.nextInt(bound);
         return randomNumber;
     }
 
-    public static char randomOperator () {
+    public static char getRandomOperator () {
         char[] operatorArray = new char[] {'+', '-', '*'};
         Random random = new Random();
         int indexArray = random.nextInt(operatorArray.length);
