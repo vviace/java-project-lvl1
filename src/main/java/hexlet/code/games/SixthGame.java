@@ -37,6 +37,5 @@ public class SixthGame {
                 break;
             }
         }
-        System.out.println("Congratulations, " + userName + "!");
     }
 }
