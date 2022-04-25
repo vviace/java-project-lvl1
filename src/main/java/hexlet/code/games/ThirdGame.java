@@ -43,7 +43,7 @@ public class ThirdGame {
                 System.out.println(userNumber
                         + " is wrong answer ;(. Correct answer was "
                         + correctAnswer
-                        + ".\nLet's try again, " + userName);
+                        + ".\nLet's try again, " + userName + "!");
                 answerCount -= answerCount;
             }
         }

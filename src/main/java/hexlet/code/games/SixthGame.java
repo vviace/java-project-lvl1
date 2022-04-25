@@ -30,7 +30,7 @@ public class SixthGame {
                 System.out.println(userMessage
                         + " is wrong answer ;(. Correct answer was "
                         + correctAnswer
-                        + ".\nLet's try again, " + userName);
+                        + ".\nLet's try again, " + userName + "!");
                 answerCount -= answerCount;
             }
         }
