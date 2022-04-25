@@ -3,19 +3,19 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 
 public class SecondGame {
-    public static void even (int numberOfGames) {
+    public static void even(int numberOfGames) {
         String userName = FirstGame.greeting();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
         int answerCount = 0;
-        while (answerCount <= numberOfGames-1) {
-
-            int randomNumber = Engine.getRandomNumber(100);
+        while (answerCount <= numberOfGames - 1) {
+            final int maxNumberBound = 100;
+            int randomNumber = Engine.getRandomNumber(maxNumberBound);
             System.out.println("Question: " + randomNumber);
             System.out.println("Your answer: ");
             var userMessage = Engine.getMessage();
             String correctAnswer;
-            if (randomNumber % 2 == 0 ) {
+            if (randomNumber % 2 == 0) {
                 correctAnswer = "yes";
 
             } else {
@@ -30,6 +30,6 @@ public class SecondGame {
                 answerCount -= answerCount;
             }
         }
-        System.out.println("Congratulations, " + userName +"!");
+        System.out.println("Congratulations, " + userName + "!");
     }
 }

@@ -9,6 +9,6 @@
 4. Пример запуска игры №4.
    [![asciicast](https://asciinema.org/a/C0hFVpWrTamd3PnTSPhNy334c.svg)](https://asciinema.org/a/C0hFVpWrTamd3PnTSPhNy334c)
 5. Пример запуска игры №5.
-   [![asciicast](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM.svg)](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM)
+   [![asciicast](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM.svg)](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM) 
 6. Пример запуска игры №6.
    [![asciicast](https://asciinema.org/a/hoN3h32wloh1Tb1zC1mMvL7K0.svg)](https://asciinema.org/a/hoN3h32wloh1Tb1zC1mMvL7K0)

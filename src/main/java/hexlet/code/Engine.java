@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Engine {
-    public static int getGcdByEuclidsAlgorithm (int n1, int n2) {
+    public static int getGcdByEuclidsAlgorithm(int n1, int n2) {
         if (n2 == 0) {
             return n1;
         }
@@ -31,21 +31,21 @@ public class Engine {
         return randomNumber;
     }
 
-    public static char getRandomOperator () {
+    public static char getRandomOperator() {
         char[] operatorArray = new char[] {'+', '-', '*'};
         Random random = new Random();
         int indexArray = random.nextInt(operatorArray.length);
         return operatorArray[indexArray];
     }
-    public static boolean checkPrime (int randomNumber) {
+    public static boolean checkPrime(int randomNumber) {
         boolean answer = true;
         for (int i = 2; i < Math.sqrt(randomNumber); i++) {
-                var number = randomNumber % i;
-                if (number == 0) {
-                    answer = false;
-                    break;
-                }
+            var number = randomNumber % i;
+            if (number == 0) {
+                answer = false;
+                break;
             }
+        }
         if (randomNumber == 0 || randomNumber == 1) {
             answer = false;
         }
