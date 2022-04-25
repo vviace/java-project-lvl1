@@ -37,6 +37,12 @@ public class Engine {
         int indexArray = random.nextInt(operatorArray.length);
         return operatorArray[indexArray];
     }
+    public static char getOperator() {
+        char[] operatorArray = new char[] {'+', '-'};
+        Random random = new Random();
+        int indexArray = random.nextInt(operatorArray.length);
+        return operatorArray[indexArray];
+    }
     public static boolean checkPrime(int randomNumber) {
         boolean answer = true;
         for (int i = 2; i < Math.sqrt(randomNumber); i++) {

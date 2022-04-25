@@ -14,7 +14,7 @@ public class FifthGame {
         while (answerCount <= numberOfGames - 1) {
             final int maxNumberBound = 100;
             int firstElement = Engine.getRandomNumber(maxNumberBound);
-            int operator = Engine.getRandomOperator();
+            int operator = Engine.getOperator();
             Random random = new Random();
             final int maxProgressionBound = 10;
             int progressionValue = random.nextInt(1, maxProgressionBound);
@@ -25,10 +25,6 @@ public class FifthGame {
             int replaceIndex = random.nextInt(0, lengthArray);
             progression[0] = firstElement;
             for (var i = 0; i < progression.length - 1; i++) {
-                if (operator == '*') {
-                    int multiply = progression[i] * progressionValue;
-                    progression[i + 1] = multiply;
-                }
                 if (operator == '+') {
                     int sum = progression[i] + progressionValue;
                     progression[i + 1] = sum;
