@@ -4,11 +4,15 @@
 ![example workflow](https://github.com/vviace/java-project-lvl1/actions/workflows/main.yml/badge.svg)
 2. Пример запуска игры №2.
 [![asciicast](https://asciinema.org/a/488745.svg)](https://asciinema.org/a/488745)
+
 3. Пример запуска игры №3.
 [![asciicast](https://asciinema.org/a/FtCEvdRGabkY043vSfDw8XFwT.svg)](https://asciinema.org/a/FtCEvdRGabkY043vSfDw8XFwT)
-4. Пример запуска игры №4.
+4. 
+5. Пример запуска игры №4.
 [![asciicast](https://asciinema.org/a/C0hFVpWrTamd3PnTSPhNy334c.svg)](https://asciinema.org/a/C0hFVpWrTamd3PnTSPhNy334c)
-5. Пример запуска игры №5.                                   
+6. 
+7. Пример запуска игры №5.                                   
 [![asciicast](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM.svg)](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM) 
-6. Пример запуска игры №6.
+8. 
+9. Пример запуска игры №6.
 [![asciicast](https://asciinema.org/a/hoN3h32wloh1Tb1zC1mMvL7K0.svg)](https://asciinema.org/a/hoN3h32wloh1Tb1zC1mMvL7K0)
