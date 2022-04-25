@@ -39,14 +39,16 @@ public class ThirdGame {
             if (userNumber == correctAnswer) {
                 System.out.println("Correct!");
                 answerCount++;
+                if (answerCount == numberOfGames) {
+                    System.out.println("Congratulations, " + userName + "!");
+                }
             } else {
                 System.out.println(userNumber
                         + " is wrong answer ;(. Correct answer was "
                         + correctAnswer
                         + ".\nLet's try again, " + userName + "!");
-                answerCount -= answerCount;
+                break;
             }
         }
-        System.out.println("Congratulations, " + userName + "!");
     }
 }
