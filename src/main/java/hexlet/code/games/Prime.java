@@ -7,7 +7,8 @@ public class Prime {
         boolean answer = true;
         for (int i = 2; i < Math.sqrt(randomNumber); i++) {
             var number = randomNumber % i;
-            if (number == 0) {
+            System.out.println(number);
+            if (number != 1) {
                 answer = false;
                 break;
             }
