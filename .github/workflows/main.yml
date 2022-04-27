@@ -14,4 +14,4 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
       - name: Build with gradle
-        run: ./gradlew build
+        run: make build
