@@ -3,21 +3,19 @@ import hexlet.code.Cli;
 import hexlet.code.Engine;
 import java.util.Random;
 public class Prime {
-    public static boolean checkPrime(int randomNumber) {
-        boolean answer = true;
-        for (int i = 2; i < Math.sqrt(randomNumber); i++) {
-            var number = randomNumber % i;
-            System.out.println(number);
-            if (number != 1) {
-                answer = false;
-                break;
+    static boolean isPrime(int number)
+    {
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                return false;
             }
         }
-        if (randomNumber == 0 || randomNumber == 1) {
-            answer = false;
-        }
-        return answer;
+        return true;
     }
+
     public static void primeGame() {
         String userName = Cli.startDialog();
         String state = "\nAnswer 'yes' if the number is prime, otherwise answer 'no'.";
@@ -27,11 +25,11 @@ public class Prime {
         while (game) {
             answerCount++;
             Random random = new Random();
-            final int limitValue = 100;
+            final int limitValue = 500;
             int randomNumber1 = random.nextInt(limitValue);
             String question = "" + randomNumber1;
             String correctAnswer = "";
-            if (checkPrime(randomNumber1)) {
+            if (isPrime(randomNumber1)) {
                 correctAnswer = "yes";
             } else {
                 correctAnswer = "no";
