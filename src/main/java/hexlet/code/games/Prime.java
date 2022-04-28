@@ -3,8 +3,7 @@ import hexlet.code.Cli;
 import hexlet.code.Engine;
 import java.util.Random;
 public class Prime {
-    static boolean isPrime(int number)
-    {
+    public static boolean isPrime(int number) {
         if (number <= 1) {
             return false;
         }
