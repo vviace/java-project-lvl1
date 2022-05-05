@@ -4,9 +4,11 @@ import hexlet.code.games.Calculation;
 import hexlet.code.games.Gcd;
 import hexlet.code.games.Progression;
 import hexlet.code.games.Prime;
-
 import java.util.Scanner;
 
+/**
+ * class App предназначен для отображения игрового меню, выбора и запуска нужной игры
+ */
 public class App {
     public static void main(String[] args) {
 
@@ -25,15 +27,15 @@ public class App {
         switch (userChoice) {
             case("1"): Cli.startDialog();
                 break;
-            case("2"): Even.evenGame();
+            case("2"): Even.secondGame();
                 break;
-            case("3"): Calculation.calcGame();
+            case("3"): Calculation.thirdGame();
                 break;
-            case("4"): Gcd.gcdGame();
+            case("4"): Gcd.fourthGame();
                 break;
-            case("5"): Progression.progressionGame();
+            case("5"): Progression.fifthGame();
                 break;
-            case("6"): Prime.primeGame();
+            case("6"): Prime.sixthGame();
                 break;
             default:
                 break;

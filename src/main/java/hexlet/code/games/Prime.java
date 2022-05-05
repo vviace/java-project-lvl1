@@ -1,8 +1,8 @@
 package hexlet.code.games;
-import hexlet.code.Cli;
 import hexlet.code.Engine;
 import java.util.Random;
 public class Prime {
+    private static final int LIMITNUMBERS = 500;
     public static boolean isPrime(int number) {
         if (number <= 1) {
             return false;
@@ -15,25 +15,22 @@ public class Prime {
         return true;
     }
 
-    public static void primeGame() {
-        String userName = Cli.startDialog();
-        String state = "\nAnswer 'yes' if the number is prime, otherwise answer 'no'.";
-        System.out.println(state);
-        boolean game = true;
-        int answerCount = 0;
-        while (game) {
-            answerCount++;
-            Random random = new Random();
-            final int limitValue = 500;
-            int randomNumber1 = random.nextInt(limitValue);
-            String question = "" + randomNumber1;
-            String correctAnswer = "";
-            if (isPrime(randomNumber1)) {
+    public static void sixthGame() {
+        String task = "\nAnswer 'yes' if the number is prime, otherwise answer 'no'.";
+        Random random = new Random();
+        StringBuilder questions = new StringBuilder();
+        String correctAnswer = "";
+        StringBuilder correctAnswers = new StringBuilder();
+        for (int i = 0; i < Engine.ROUNDS; i++) {
+            int randomNumber = random.nextInt(LIMITNUMBERS);
+            questions.append(randomNumber).append(",");
+            if (isPrime(randomNumber)) {
                 correctAnswer = "yes";
             } else {
                 correctAnswer = "no";
             }
-            game = Engine.startGame(question, correctAnswer, userName, answerCount);
+            correctAnswers.append(correctAnswer).append(",");
         }
+        Engine.startGame(task, questions.toString(), correctAnswers.toString());
     }
 }
