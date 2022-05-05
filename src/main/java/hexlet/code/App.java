@@ -6,9 +6,6 @@ import hexlet.code.games.Progression;
 import hexlet.code.games.Prime;
 import java.util.Scanner;
 
-/**
- * class App предназначен для отображения игрового меню, выбора и запуска нужной игры
- */
 public class App {
     public static void main(String[] args) {
 
