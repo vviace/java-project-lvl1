@@ -5,11 +5,11 @@
 # Brain games (Java)
 "Brain games" - set of five console games. Each game ask questions that need to be answered correctly. After three correct answers, the game is over.
 #### Games:
-- Even 
-- Calculation
-- GCD
-- Progression
-- Prime 
+- [Even](#id-even) 
+- [Calculation](#id-calc)
+- [GCD](#id-gcd)
+- [Progression](#id-progression)
+- [Prime](#id-prime) 
 
 ## Install
 > $ make install
@@ -23,27 +23,33 @@
 > $ make
 ## Clean
 > $ make clean
-## Brain-Even game :
+
+## Brain-Even game : 
 **Note:** Shows random number. Player needs to answer 'yes' if number is even. Otherwise answer 'no'.
+<div id='id-even'/>
 
 [![asciicast](https://asciinema.org/a/488745.svg)](https://asciinema.org/a/488745)
 
 ## Brain-Calculation game :
 **Note:** Shows random mathematical expression, for example 35 + 16. Player needs to find the result of expression.
+<div id='id-calc'/>
 
 [![asciicast](https://asciinema.org/a/FtCEvdRGabkY043vSfDw8XFwT.svg)](https://asciinema.org/a/FtCEvdRGabkY043vSfDw8XFwT)
 
 ## Brain-GCD game :
 **Note:** Shows two random numbers, for example 25 and 50. Player needs to find the greatest common divisor of given numbers.
+<div id='id-gcd'/>
 
 [![asciicast](https://asciinema.org/a/C0hFVpWrTamd3PnTSPhNy334c.svg)](https://asciinema.org/a/C0hFVpWrTamd3PnTSPhNy334c)
 
 ## Brain-Progression game :
 **Note:** Shows series of numbers that form an arithmetic progression replacing any of the numbers with two dots. Player needs to find missing number.
+<div id='id-progression'/>
 
-[![asciicast](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM.svg)](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM) 
+[![asciicast](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM.svg)](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM)
 
 ## Brain-Prime game :
 **Note:** Shows random number. Player needs to answer 'yes' if given number is prime. Otherwise answer 'no'.
+<div id='id-prime'/>
 
 [![asciicast](https://asciinema.org/a/hoN3h32wloh1Tb1zC1mMvL7K0.svg)](https://asciinema.org/a/hoN3h32wloh1Tb1zC1mMvL7K0)
