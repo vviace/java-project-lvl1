@@ -4,7 +4,7 @@
 ![example workflow](https://github.com/vviace/java-project-lvl1/actions/workflows/main.yml/badge.svg)
 # Brain games (Java)
 "Brain games" - set of five console games. Each game ask questions that need to be answered correctly. After three correct answers, the game is over.
-##### Games:
+#### Games:
 - Even 
 - Calculation
 - GCD
