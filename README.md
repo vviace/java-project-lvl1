@@ -24,28 +24,37 @@
 ## Clean
 > $ make clean
 
+<div id='id-even'/>
 
-## Brain-Even game : <div id='id-even'/>
+## Brain-Even game : 
 **Note:** Shows random number. Player needs to answer 'yes' if number is even. Otherwise answer 'no'.
 
 [![asciicast](https://asciinema.org/a/488745.svg)](https://asciinema.org/a/488745)
 
-## Brain-Calculation game : <div id='id-calc'/>
+<div id='id-calc'/>
+
+## Brain-Calculation game : 
 **Note:** Shows random mathematical expression, for example 35 + 16. Player needs to find the result of expression.
 
 [![asciicast](https://asciinema.org/a/FtCEvdRGabkY043vSfDw8XFwT.svg)](https://asciinema.org/a/FtCEvdRGabkY043vSfDw8XFwT)
 
-## Brain-GCD game : <div id='id-gcd'/>
+<div id='id-gcd'/>
+
+## Brain-GCD game : 
 **Note:** Shows two random numbers, for example 25 and 50. Player needs to find the greatest common divisor of given numbers.
 
 [![asciicast](https://asciinema.org/a/C0hFVpWrTamd3PnTSPhNy334c.svg)](https://asciinema.org/a/C0hFVpWrTamd3PnTSPhNy334c)
 
-## Brain-Progression game : <div id='id-progression'/>
+<div id='id-progression'/>
+
+## Brain-Progression game : 
 **Note:** Shows series of numbers that form an arithmetic progression replacing any of the numbers with two dots. Player needs to find missing number.
 
 [![asciicast](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM.svg)](https://asciinema.org/a/wN4frgBlVDXWGmsIOzKZ8RzvM)
 
-## Brain-Prime game : <div id='id-prime'/>
+<div id='id-prime'/>
+
+## Brain-Prime game : 
 **Note:** Shows random number. Player needs to answer 'yes' if given number is prime. Otherwise answer 'no'.
 
 [![asciicast](https://asciinema.org/a/hoN3h32wloh1Tb1zC1mMvL7K0.svg)](https://asciinema.org/a/hoN3h32wloh1Tb1zC1mMvL7K0)
