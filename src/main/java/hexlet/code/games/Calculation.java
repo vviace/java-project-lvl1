@@ -1,37 +1,37 @@
 package hexlet.code.games;
 import hexlet.code.Engine;
-import java.util.Random;
+import hexlet.code.Utils;
+
 public class Calculation {
-    private static final int LIMITNUMBERS = 100;
-    private static final char PLUS = '+';
-    private static final char MINUS = '-';
-    private static final char MULTIPLY = '*';
-    private static final char[] PROCEDURE = new char[] {PLUS, MINUS, MULTIPLY};
-    public static void thirdGame() {
+    private static final int LIMIT_NUMBERS = 100;
+    private static final char[] OPERATORS = new char[] {'+', '-', '*'};
+
+    public static void startGame() {
 
         String task = "What is the result of the expression?";
-        Random random = new Random();
-        StringBuilder questions = new StringBuilder();
         String correctAnswer = "";
-        StringBuilder correctAnswers = new StringBuilder();
+        String[][] questionAnswers = new String[Engine.ROUNDS][2];
         for (int i = 0; i < Engine.ROUNDS; i++) {
-            int randomNumber1 = random.nextInt(LIMITNUMBERS);
-            int randomNumber2 = random.nextInt(LIMITNUMBERS);
-            int procedureIndex = random.nextInt(PROCEDURE.length);
-            String question = "" + randomNumber1 + " " + PROCEDURE[procedureIndex] + " " + randomNumber2;
-            questions.append(question).append(",");
-            switch (PROCEDURE[procedureIndex]) {
-                case (PLUS): correctAnswer = Integer.toString(randomNumber1 + randomNumber2);
-                break;
-                case (MINUS): correctAnswer = Integer.toString(randomNumber1 - randomNumber2);
-                break;
-                case(MULTIPLY): correctAnswer = Integer.toString(randomNumber1 * randomNumber2);
-                break;
+            int randomNumber1 = Utils.generateRandomNumber(LIMIT_NUMBERS);
+            int randomNumber2 = Utils.generateRandomNumber(LIMIT_NUMBERS);
+            int procedureIndex = Utils.generateRandomNumber(OPERATORS.length);
+            String question = "" + randomNumber1 + " " + OPERATORS[procedureIndex] + " " + randomNumber2;
+            questionAnswers[i][0] = question;
+            switch (OPERATORS[procedureIndex]) {
+                case ('+'):
+                    correctAnswer = Integer.toString(randomNumber1 + randomNumber2);
+                    break;
+                case ('-'):
+                    correctAnswer = Integer.toString(randomNumber1 - randomNumber2);
+                    break;
+                case ('*'):
+                    correctAnswer = Integer.toString(randomNumber1 * randomNumber2);
+                    break;
                 default:
                     break;
             }
-            correctAnswers.append(correctAnswer).append(",");
+            questionAnswers[i][1] = correctAnswer;
         }
-        Engine.startGame(task, questions.toString(), correctAnswers.toString());
+        Engine.startGame(task, questionAnswers);
     }
 }

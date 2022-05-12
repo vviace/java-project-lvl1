@@ -1,8 +1,8 @@
 package hexlet.code.games;
 import hexlet.code.Engine;
-import java.util.Random;
+import hexlet.code.Utils;
 public class Prime {
-    private static final int LIMITNUMBERS = 500;
+    private static final int LIMIT_NUMBERS = 500;
     public static boolean isPrime(int number) {
         if (number <= 1) {
             return false;
@@ -15,22 +15,14 @@ public class Prime {
         return true;
     }
 
-    public static void sixthGame() {
-        String task = "\nAnswer 'yes' if the number is prime, otherwise answer 'no'.";
-        Random random = new Random();
-        StringBuilder questions = new StringBuilder();
-        String correctAnswer = "";
-        StringBuilder correctAnswers = new StringBuilder();
+    public static void startGame() {
+        String task = "Answer 'yes' if the number is prime, otherwise answer 'no'.";
+        String[][] questionAnswers = new String[Engine.ROUNDS][2];
         for (int i = 0; i < Engine.ROUNDS; i++) {
-            int randomNumber = random.nextInt(LIMITNUMBERS);
-            questions.append(randomNumber).append(",");
-            if (isPrime(randomNumber)) {
-                correctAnswer = "yes";
-            } else {
-                correctAnswer = "no";
-            }
-            correctAnswers.append(correctAnswer).append(",");
+            int randomNumber = Utils.generateRandomNumber(LIMIT_NUMBERS);
+            questionAnswers[i][0] = Integer.toString(randomNumber);
+            questionAnswers[i][1] = (isPrime(randomNumber)) ? "yes" : "no";
         }
-        Engine.startGame(task, questions.toString(), correctAnswers.toString());
+        Engine.startGame(task, questionAnswers);
     }
 }

@@ -22,20 +22,22 @@ public class App {
         System.out.println("Your choice: " + userChoice);
 
         switch (userChoice) {
-            case("1"): Cli.startDialog();
+            case("1"): Cli.startGame();
                 break;
-            case("2"): Even.secondGame();
+            case("2"): Even.startGame();
                 break;
-            case("3"): Calculation.thirdGame();
+            case("3"): Calculation.startGame();
                 break;
-            case("4"): Gcd.fourthGame();
+            case("4"): Gcd.startGame();
                 break;
-            case("5"): Progression.fifthGame();
+            case("5"): Progression.startGame();
                 break;
-            case("6"): Prime.sixthGame();
+            case("6"): Prime.startGame();
+                break;
+            case("0"):
                 break;
             default:
-                break;
+                throw new RuntimeException("Enter number of game!");
         }
     }
 }
